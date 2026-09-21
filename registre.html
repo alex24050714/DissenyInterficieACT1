@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registre</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registre.html">Registre</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <div class="form-container">
+        <form action="login.html" method="get">
+            <label for="login">Ja tens un compte? Inicia sessió:</label>
+            <input type="submit" value="Login">
+        </form>
+        </div>
+
+        <section class="login-box">
+            <h2>Formulari de registre</h2>
+            <form action="registre.php" method="POST">
+                <label for="username">Nom d'usuari:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Contrasenya:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <input type="submit" value="Registrar-se">
+            </form>
+        </section>
+
+        <aside>
+            <h2>Informació addicional</h2>
+            <p>Aquí pots afegir informació addicional sobre el registre.</p>
+        </aside>
+
+        <article>
+            <h2>Notícies i actualitzacions</h2>
+            <p>Aquí pots afegir notícies i actualitzacions sobre el registre.</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
+    </footer>
+
 </body>
 </html>

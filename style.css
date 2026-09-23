@@ -45,9 +45,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ==========================================================================
-   1. LOGIN (login.html)
-   ========================================================================== */
 .login-page {
     background-color: transparent;
     padding-top: 16px;
@@ -208,7 +205,6 @@ a:hover {
     background-color: #fff;
 }
 
-/* Alineación limpia del checkbox "Recorda'm" */
 .remember-option {
     display: flex;
     align-items: center;
@@ -260,9 +256,6 @@ a:hover {
     border-radius: 10px;
 }
 
-/* ==========================================================================
-   2. REGISTRE (registre.html)
-   ========================================================================== */
 .register-page {
     background-color: transparent;
     padding-top: 16px;
@@ -418,9 +411,6 @@ a:hover {
     border-radius: 10px;
 }
 
-/* ==========================================================================
-   3. HOME (index.html)
-   ========================================================================== */
 .home-page {
     background-color: transparent;
     padding: 16px 0;
@@ -582,9 +572,6 @@ a:hover {
     border-radius: 10px;
 }
 
-/* ==========================================================================
-   4. PERFIL (perfil.html)
-   ========================================================================== */
 .profile-page {
     background-color: transparent;
     padding-top: 16px;
@@ -708,9 +695,6 @@ a:hover {
     margin-top: 12px;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN
-   ========================================================================== */
 @media (max-width: 768px) {
     .home-layout,
     .profile-layout,

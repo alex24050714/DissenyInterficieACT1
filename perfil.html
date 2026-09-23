@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="registre.html">Registre</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-        </ul>
-    </nav>
-    <main class="main-content">
-        <section class="profile-box">
-            <h2>Perfil d'usuari</h2>
-            <p>Aquí pots mostrar la informació del perfil de l'usuari.</p>
-        </section>
+<body class="profile-page">
 
-        <aside>
-            <h2>Informació addicional</h2>
-            <p>Aquí pots afegir informació addicional sobre el perfil.</p>
+    <div class="profile-layout">
+        
+        <aside class="profile-sidebar">
+            <a href="perfil.html" class="profile-avatar">A</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registre.html">Registre</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="perfil.html" class="active">Perfil</a></li>
+            </ul>
         </aside>
 
-        <article>
-            <h2>Notícies i actualitzacions</h2>
-            <p>Aquí pots afegir notícies i actualitzacions sobre el perfil.</p>
-        </article>
-    </main>
+        <div class="profile-workspace">
+            
+            <header class="profile-banner">
+                <div class="profile-banner-image"></div>
+                <button class="camera-button" type="button" aria-label="Canviar imatge"></button>
+                <div class="profile-banner-info">
+                    <div class="profile-small-avatar">A</div>
+                    <div>
+                        <h1>Usuari</h1>
+                        <p>Perfil d'usuari</p>
+                    </div>
+                </div>
+            </header>
 
-    <footer>
-        <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
-    </footer>
+            <main class="profile-content">
+                <section class="profile-section">
+                    <h2>Perfil d'usuari</h2>
+                    <p>Aquí pots mostrar la informació del perfil de l'usuari.</p>
+                    <ul>
+                        <li>Dades personals</li>
+                        <li>Configuració del compte</li>
+                        <li>Preferències</li>
+                    </ul>
+                </section>
+
+                <aside class="profile-aside">
+                    <h2>Informació addicional</h2>
+                    <p>Aquí pots afegir informació addicional sobre el perfil.</p>
+                </aside>
+
+                <article class="profile-article">
+                    <h2>Notícies i actualitzacions</h2>
+                    <p>Aquí pots afegir notícies i actualitzacions sobre el perfil.</p>
+                </article>
+            </main>
+
+            <footer>
+                <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
+            </footer>
+
+        </div>
+
+    </div>
+
 </body>
 </html>

@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Welcome to Our Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="registre.html">Registre</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-        </ul>
-    </nav>
-    <main class="main-content">
-        <div class="background-image"></div>
-        <section>
-            <h2>About Us</h2>
-            <p>This is the home page of our website. Here you can find information about our services and offerings.</p>
-        </section>
-        <form action="registre.html" method="get">
-            <label for="registre">No tens un compte? Registra't ara:</label>
-            <input type="submit" value="Registre">
-        </form>
+<body class="home-page">
 
-        <aside>
-            <h2>Informació addicional</h2>
-            <p>Aquí pots afegir informació addicional sobre el teu lloc web.</p>
-        </aside>
+    <div class="home-layout">
+        <!-- Menú lateral azul -->
+        <nav class="home-nav">
+            <a href="perfil.html" class="avatar-logo">A</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registre.html">Registre</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
 
-        <article>
-            <h2>Notícies i actualitzacions</h2>
-            <p>Aquí pots afegir notícies i actualitzacions sobre el teu lloc web.</p>
-        </article>
-    </main>
+        <!-- Bloque central de contenido -->
+        <main class="main-content">
+            <section class="intro-section">
+                <h1>Benvingut a la nostra pàgina web</h1>
+                <p>Aquesta és la pàgina d'inici del nostre lloc web. Aquí pots trobar informació sobre els nostres serveis i ofertes.</p>
+            </section>
 
-    <footer>
-        <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
-    </footer>
+            <div class="home-form">
+                <form action="registre.html" method="get">
+                    <label for="registre">No tens un compte? Registra't ara:</label>
+                    <input type="submit" id="registre" value="Registre">
+                </form>
+            </div>
+
+            <div class="content-stage">
+                <article class="news-article">
+                    <h2>Notícies i actualitzacions</h2>
+                    <p>Aquí pots afegir notícies i actualitzacions sobre el teu lloc web.</p>
+                </article>
+
+                <aside class="home-aside">
+                    <h2>Informació addicional</h2>
+                    <p>Aquí pots afegir informació addicional sobre el teu lloc web.</p>
+                </aside>
+            </div>
+        </main>
+
+        <!-- Pie de página a todo lo ancho -->
+        <footer>
+            <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
+        </footer>
+    </div>
+
 </body>
 </html>

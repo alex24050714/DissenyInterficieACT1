@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Login</h1>
-    </header>
-    <nav>
+<body class="login-page">
+
+    <!-- Navegación superior -->
+    <nav class="login-nav">
+        <a href="perfil.html" class="login-avatar">A</a>
+        <a href="login.html">Login</a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="registre.html">Registre</a></li>
@@ -18,32 +19,49 @@
             <li><a href="perfil.html">Perfil</a></li>
         </ul>
     </nav>
-    <main class="main-content">
-        <div class="background-image"></div>
-        <section>
-            <form action="login.php" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
-                <input type="submit" value="Login">
+
+    <!-- Contenido principal (Marco naranja) -->
+    <main class="login-main">
+        
+        <!-- Columna izquierda: Bloques azul (arriba) y amarillo (abajo) -->
+        <div class="login-side-content">
+            <aside class="login-aside">
+                <h2>Benvingut a la pàgina de login</h2>
+                <p>Si us plau, introdueix les teves credencials per accedir al teu compte.</p>
+            </aside>
+
+            <article class="login-article">
+                <h2>Necessites ajuda?</h2>
+                <p>Si has oblidat la teva contrasenya, clica <a href="forgot_password.html">aquí</a> per restablir-la.</p>
+            </article>
+        </div>
+
+        <!-- Columna derecha: Formulario lila -->
+        <section class="login-section">
+            <div class="large-avatar">A</div>
+            <h1>Login</h1>
+            <form action="login.php" method="post" class="login-form">
+                <label for="username">Usuari:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Contrasenya:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div class="remember-option">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recorda'm</label>
+                </div>
+
+                <input type="submit" value="Login" class="login-submit">
             </form>
         </section>
-        
-        <article>
-            <h2>Welcome to the Login Page</h2>
-            <p>Please enter your credentials to access your account.</p>
-        </article>
 
-        <aside>
-            <h3>Need Help?</h3>
-            <p>If you forgot your password, click <a href="forgot_password.html">here</a> to reset it.</p>
-        </aside>
     </main>
 
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
     </footer>
-    
+
 </body>
 </html>

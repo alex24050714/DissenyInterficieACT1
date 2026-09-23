@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registre</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
+<body class="register-page">
+    <nav class="register-nav">
+        <a href="perfil.html" class="register-avatar">A</a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="registre.html">Registre</a></li>
@@ -15,45 +16,40 @@
             <li><a href="perfil.html">Perfil</a></li>
         </ul>
     </nav>
-    <main class="main-content">
-        <div class="form-container">
-        <form action="login.html" method="get">
-            <label for="login">Ja tens un compte? Inicia sessió:</label>
-            <input type="submit" value="Login">
-        </form>
-        </div>
-
-        <section class="login-box">
-            <h2>Formulari de registre</h2>
-            <form action="registre.php" method="POST">
+    <main class="register-main">
+        <section class="register-section">
+            <h1>Formulari de registre</h1>
+            
+            <p class="register-intro">
+                <a href="login.html">Ja tens un compte? Inicia sessió</a>
+            </p>
+            <form action="registre.php" method="POST" class="register-form">
                 <label for="username">Nom d'usuari:</label>
-                <input type="text" id="username" name="username" required><br><br>
-
+                <input type="text" id="username" name="username" required>
                 <label for="email">Correu electrònic:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
+                <input type="email" id="email" name="email" required>
                 <label for="password">Contrasenya:</label>
-                <input type="password" id="password" name="password" required><br><br>
-
-                <input type="submit" value="Registrar-se">
+                <input type="password" id="password" name="password" required>
+                <div class="register-remember">
+                    <input type="checkbox" id="accept-terms" name="terms" required>
+                    <label for="accept-terms">Acepto els termes i condicions</label>
+                </div>
+                <input type="submit" value="Registrar-se" class="register-submit">
             </form>
         </section>
-
-        <aside>
-            <h2>Informació addicional</h2>
-            <p>Aquí pots afegir informació addicional sobre el registre.</p>
-        </aside>
-
-        <article>
-            <h2>Notícies i actualitzacions</h2>
-            <p>Aquí pots afegir notícies i actualitzacions sobre el registre.</p>
-        </article>
-
+        <div class="register-side-content">
+            <aside class="register-aside">
+                <h2>Informació addicional</h2>
+                <p>Aquí pots afegir informació addicional sobre el registre.</p>
+            </aside>
+            <article class="register-article">
+                <h2>Notícies i actualitzacions</h2>
+                <p>Aquí pots afegir notícies i actualitzacions sobre el registre.</p>
+            </article>
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
     </footer>
-
 </body>
 </html>
